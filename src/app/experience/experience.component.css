@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+.cont
+{
+    margin:100px auto 0;
+    width: 80%;
+}
+@media(max-width:578px){
+    .cont{
+        width: 100%;
+        padding: 0 15px;
+    }
+}
+.title{
+    font-size: 11px;
+    letter-spacing: 5px;
+    font-weight: normal;
+    margin-bottom: 20px;
+    color: #777;
+}
+.cont h3{
+    font-family: "Playfair Display", serif;
+    margin-bottom: 20px;
+    font-size: 21px;
+    letter-spacing: 5px;
+}
+
+.box_cont{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* align-items: end; */
+    position: relative;
+    width: 100%;
+}
+.box_cont .box{
+    background: #f2f3f7;
+    margin-bottom: 20px;
+    width: 90%;
+    position: relative;
+    padding: 15px;
+}
+.box_cont .box::before{
+    content: '';
+    position: absolute;
+    height: 120%;
+    width: 4px;
+    background: #f2f3f7;
+    left: -40px;
+    top: -20px;
+    border-radius: 5px;
+}
+.box_cont .box::after{
+    content: '';
+    position: absolute;
+    border-color: transparent #f2f3f7 transparent transparent;
+    border-width: 15px;
+    border-style: solid;
+    left: -30px;
+    top: 15px;
+}
+.box_cont .box i{
+    position: absolute;
+    left: -60px;
+    top: 10px;
+    border-radius: 50%;
+    outline: 3px solid #f2f3f7;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}

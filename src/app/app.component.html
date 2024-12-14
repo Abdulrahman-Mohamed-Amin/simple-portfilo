@@ -1,0 +1,63 @@
+<div class="container-fluid position-relative">
+    <div class="row">
+        <div class="col-md-2 sidebar d-md-block d-none">
+            <app-navbar></app-navbar>
+        </div>
+        <div class="col-md-10 col-12 offset-md-2 position-relative" style="">
+
+            <i class="fas fa-bars d-md-none d-block menu" (click)="showMenu()"></i>
+
+            <div class="hidden_nav" [ngClass]="{'show': ishiddin}">
+                <i class="fas fa-xmark fs-2 position-absolute close_menu" (click)="showMenu()"></i>
+                <div class="info mt-3 d-flex flex-column align-items-center">
+                    <img class="rounded-pill" src="./../../assets/imgs/about-BgAkqdr2.jpg" alt="" width="130" height="130">
+                    <div class="details text-center mt-4">
+                      <h3 class="fw-bold">Jackson Ford</h3>
+                      <p style="font-size: 16px;"><span class="text-primary">UI/UX/Designer</span> in Philippines</p>
+                    </div>
+                  </div>
+                  
+                  <ul class="navbar-nav text-center" style="font-size: 13px;">
+                    <li class="nav-item">
+                      <a class="nav-link" routerLink="home" routerLinkActive="text-primary" (click)="showMenu()">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        [routerLink]="['/about']"
+                        routerLinkActive="text-primary"
+                        (click)="showMenu()"
+                        >ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        [routerLink]="['/skills']"
+                        routerLinkActive="text-primary"
+                        (click)="showMenu()"
+                        >SKILLS</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        [routerLink]="['/experience']"
+                        routerLinkActive="text-primary"
+                        (click)="showMenu()"
+                        >EXPERIENCE</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" [routerLink]="['/work']" routerLinkActive="text-primary"
+                      (click)="showMenu()"
+                        >WORK</a
+                      >
+                    </li>
+                  </ul>
+            </div>
+
+            <div class="lay" [ngClass]="{'show_lay': ishiddin}"></div>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,25 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.info h3{
+    font-family: "Playfair Display", serif;
+}
+.nav-link{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2cb2f6;
+    height: 1px;
+    width: 0%;
+    transition: 0.3s;
+}
+.nav-link:hover::before{
+    width: 100%;
+}

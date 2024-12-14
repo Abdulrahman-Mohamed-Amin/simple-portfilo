@@ -1,0 +1,41 @@
+<div class="info mt-3 d-flex flex-column align-items-center">
+  <img class="rounded-pill" src="assets/imgs/about-BgAkqdr2.jpg" alt="" width="130" height="130">
+  <div class="details text-center mt-4">
+    <h3 class="fw-bold">Jackson Ford</h3>
+    <p style="font-size: 16px;"><span class="text-primary">UI/UX/Designer</span> in Philippines</p>
+  </div>
+</div>
+
+<ul class="navbar-nav text-center" style="font-size: 13px;">
+  <li class="nav-item">
+    <a class="nav-link" routerLink="home" routerLinkActive="text-primary">HOME</a>
+  </li>
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      [routerLink]="['/about']"
+      routerLinkActive="text-primary"
+      >ABOUT</a>
+  </li>
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      [routerLink]="['/skills']"
+      routerLinkActive="text-primary"
+      >SKILLS</a
+    >
+  </li>
+  <li class="nav-item">
+    <a
+      class="nav-link"
+      [routerLink]="['/experience']"
+      routerLinkActive="text-primary"
+      >EXPERIENCE</a
+    >
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" [routerLink]="['/work']" routerLinkActive="text-primary"
+      >WORK</a
+    >
+  </li>
+</ul>

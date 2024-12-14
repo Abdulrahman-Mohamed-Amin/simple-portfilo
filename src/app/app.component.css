@@ -1,0 +1,71 @@
+
+.sidebar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    background: #f5f5f5;
+}
+.container-fluid .menu{
+    font-size: 25px;
+    border: 1px solid #00000094;
+    border-radius: 8px;
+    padding: 5px 10px;
+    cursor: pointer;
+    position: fixed;
+    left: 10px;
+    top: 10px;
+    z-index: 99;
+}
+
+.hidden_nav{
+    background: #fff;
+    position: fixed;
+    height: 100vh;
+    width: 350px;
+    padding: 10px;
+    left: -350px;
+    transition: 0.5s;
+    z-index: 100;
+}
+.hidden_nav.show{
+    left: 0;
+}
+.lay{
+    position: fixed;
+    right: -100%;
+    top: 0;
+    background: #0000006e;
+    height: 100vh;
+    width: calc(100% - 350px);
+    transition: 0.5s;
+    z-index: 100;
+}
+.lay.show_lay{
+    right: 0;
+}
+.nav-link{
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.nav-link::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #2cb2f6;
+    height: 1px;
+    width: 0%;
+    transition: 0.3s;
+}
+.nav-link:hover::before{
+    width: 100%;
+}
+.close_menu{
+right: 10px; 
+top: 10px;
+cursor: pointer;
+}
+
