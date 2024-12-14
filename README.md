@@ -1,6 +1,6 @@
-# 💼 Personal Portfolio
+# 💼 Portfolio
 
-Welcome to my Personal Portfolio! This project is a showcase of my work, skills, and projects, built using the Angular framework.
+Portfolio! This project is a showcase of work, skills, and projects, built using the Angular framework.
 #### [Project Demo](https://abdulrahman-mohamed-amin.github.io/simple-portfilo/)
 ## Introduction 💡
 
